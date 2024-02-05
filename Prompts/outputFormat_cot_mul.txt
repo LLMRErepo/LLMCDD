@@ -1,0 +1,20 @@
+The output should be placed between <start> and <end> tags.
+The output should follow the following formats that contains five parts:
+1. User story
+2. Chain of thoughts
+3. Class (The classes derived from the user story should be separated by semicolon.)
+4. Attributes (The attributes linked for one class should be placed in the brackets and separated by comma.)
+5. Relationship (If relationship exists between two classes, use '-' to connect two classes and place the relationship into the brackets)
+Following is the format for the output.
+<start>
+User Story: As a xxx ...
+Chain of thoughts:
+Step 1 (Class identification):
+Step 2 (Attribute identification):
+Step 3 (Relationship identification):
+Updated Class Diagram Components:
+Class: ClassA; ClassB
+Attribute: ClassA(AttributeA, AttributeB); ClassB(NA)
+Relationship: ClassA-ClassB(RelationshipA)
+<end>
+

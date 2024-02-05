@@ -1,0 +1,60 @@
+<start>
+User Story: As an archivist, I want to apply a license or rights statement, so that I know what I can do with a file.
+Chain of thoughts:
+Step 1 (Class identification): In this user story, archivist has no system operation. Therefore, archivist is not a class derived from this user story. File is a primary entity in this domain about archiving. Licence and right statements are two entities containing some specific information. Therefore, the classes in this user story should be File, License, and RightsStatement.
+Step 2 (Attribute identification): The classes identified in above step are License, RightsStatement, and File. In this user story, no particular attributes linked to File, Licence, or RightStatements.
+Step 3 (Relationship identification): The classes identified in above step are License, RightsStatement, and File. The entire use story tells that license/rights statement are linked to file.
+Class: License; RightsStatement; File
+Attribute: License(NA); RightsStatement(NA); File(NA)
+Relationship: File-Licence(Association); File-RightsStatement(Association)
+<end>
+<start>
+User Story: As an archivist, I want to mark individual files as restricted, so that they don't get shared by mistake.
+Chain of thoughts:
+Step 1 (Class identification): In this user story, archivist has no system operation. Therefore, archivist is not a class in this user story. File is a primary entity in this domain about archiving. Therefore, the class in this user story should be File.
+Step 2 (Attribute identification): The class identified in above step is File. The archivist can mark the file as restricted or not. Therefore, isRestricted is an attribute associated with class File.
+Step 3 (Relationship identification): No particular relation is identified in this user story.
+Class: File
+Attribute: File(isRestricted)
+Relationship: NA
+<end>
+<start>
+User Story: As a researcher, I want to check whether a document has a citation information, so that I can cite accurately in a publication.
+Chain of thoughts:
+Step 1 (Class identification): In this user story, researcher has no system operation. Therefore, researcher is not a class in this user story. Document is a primary entity that contains different information. Citation is an entity containing publication related information. Therefore, the classes in this user story should be Document, and Citation.
+Step 2 (Attribute identification): The classes identified in above step are Document, and Citation. In this user story, no particular attributes linked with the document or citation.
+Step 3 (Relationship identification): The classes identified in above step are Document, and Citation. The user story indicates Document has a citation information. Therefore, citation is a class containing citation related information. And the "has" verb denotes the association.
+Class: Document; Citation
+Attribute: Document(NA); Citation(NA)
+Relationship: Document-Citation(Association)
+<end>
+<start>
+User Story: As a researcher, I want to check whether a document has a name, so that I can refer to it.
+Chain of thoughts:
+Step 1 (Class identification): In this user story, researcher has no system operation. Therefore, researcher is not a class in this user story. Document is a primary entity that contains different information. The name is associated with a document, and it cannot denote as a domain entity to contain more details. Therefore, name is not a class. The class in this user story should be Document.
+Step 2 (Attribute identification): The class identified in above step is Document. The user story mentions a document has a name for reference. Therefore, name is an attribute associated with class Document.
+Step 3 (Relationship identification): The class identified in above step is Document. No particular relation is identified in this user story.
+Class: Document
+Attribute: Document(name)
+Relationship: NA
+<end>
+<start>
+User Story: As an administrator, I want to have researchers reset their own passwords, so that I don't have to send passwords in cleartext.
+Chain of thoughts:
+Step 1 (Class identification): Researcher has the reset system operation in this user story. Therefore, researcher is a class. The password is associated with a researcher, and it cannot denote as primary domain entity to contain more details. Therefore, password is not a class.  Therefore, the class in this user story should be Researcher.
+Step 2 (Attribute identification): The class identified in above step is Researcher. In this user story, the researchers would like to reset their password. Therefore, password is associated the class Researcher.
+Step 3 (Relationship identification): The class identified in above step is Researcher. No particular relation is identified in this user story.
+Class: Researcher
+Attribute: Researcher(password)
+Relationship: NA
+<end>
+<start>
+User Story: As an archivist, I want to manage documentation, including preservation photos, forms and correspondence, so that I can find it easily later.
+Chain of thoughts:
+Step 1 (Class identification): In this user story, archivist has no system operation. Therefore, archivist is not a class in this user story. Documentation is a primary entity in this domain about managing documentation. Preservation photos, forms, and correspondence are different types of documentation. And they contain different types of documentation details. Therefore, the classes in this user story should be Documentation, PreservationPhoto, Form, and Correspondence.
+Step 2 (Attribute identification): The classes identified in above step are Document, PreservationPhoto, Form, and Correspondence. In this user story, no specific attributes are mentioned.
+Step 3 (Relationship identification): The classes identified in above step are Document, PreservationPhoto, Form, and Correspondence. The user story mentions that the documentation includes preservation photos, forms, and correspondence. Therefore, PreservationPhoto, Form, and Correspondence are generated from Document.
+Class: Documentation; PreservationPhoto; Form; Correspondence
+Attribute: Documentation(NA); PreservationPhoto(NA); Form(NA); Correspondence(NA)
+Relationship: Documentation-PreservationPhoto(Generalization); Documentation-Form(Generalization); Documentation-Correspondence(Generalization)
+<end>

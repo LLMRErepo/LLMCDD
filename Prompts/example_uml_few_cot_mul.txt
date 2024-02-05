@@ -1,0 +1,34 @@
+<start>
+User Story: As an archivist, I want to apply a license or rights statement, so that I know what I can do with a file.
+Chain of thoughts:
+Step 1 (Class identification): In this user story, archivist has no system operation. Therefore, archivist is not a class dervied from this user story. File is a primary entity in this domain about archiving. Licence and right statements are two entities containing some specific information. Therefore, the classes in this user story should be File, License, and RightsStatement.
+Step 2 (Attribute identification): The classes identified in above step are License, RightsStatement, and File. In this user story, no particular attributes linked to File, Licence, or RightStatements.
+Step 3 (Relationship identification): The classes identified in above step are License, RightsStatement, and File. The entire use story tells that license/rights statement are linked to file.
+Updated Class Diagram components:
+Class: License; RightsStatement; File
+Attribute: License(NA); RightsStatement(NA); File(NA)
+Relationship: File-Licence(Association); File-RightsStatement(Association)
+<end>
+<start>
+User Story: As an archivist, I want to mark individual files as restricted, so that they don't get shared by mistake.
+Relationship: File-Licence(Association); File-RightsStatement(Association)
+Chain of thoughts:
+Step 1 (Class identification): In this user story, archivist has no system operation. Therefore, archivist is not a class in this user story. File is a primary entity in this domain about archiving. Therefore, the class in this user story should be File.
+Step 2 (Attribute identification): The class identified in above step is File. In this user story, the archivist would like to mark the file as restricted. Therefore, isRestricted is attribute associated with File.
+Step 3 (Relationship identification): No particular relation is identified in this user story.
+Updated Class Diagram components:
+Class: License; RightsStatement; File
+Attribute: License(NA); RightsStatement(NA); File(isRestricted)
+Relationship: File-Licence(Association); File-RightsStatement(Association)
+<end>
+<start>
+User Story: As an archivist, I want to manage documentation, including preservation photos, forms and correspondence, so that I can find it easily later.
+Chain of thoughts:
+Step 1 (Class identification): In this user story, archivist has no system operation. Therefore, archivist is not a class in this user story. Documentation is a primary entity in this domain about archiving. Preservation photos, forms, and correspondence are different types of documentation. Therefore, the classes in this user story should be Documentation, PreservationPhoto, Form, and Correspondence.
+Step 2 (Attribute identification): The classes identified in above step are Document, PreservationPhoto, Form, and Correspondence. In this user story, no specific attributes are mentioned.
+Step 3 (Relationship identification): The classes identified in above step are Document, PreservationPhoto, Form, and Correspondence. The user story mentions that the documentation includes preservation photos, forms, and correspondence. Therefore, PreservationPhoto, Form, and Correspondence are generated from Document.
+Updated Class Diagram Components:
+Class: License(NA); RightsStatement(NA); File(isRestricted); Documentation; PreservationPhoto; Form; Correspondence
+Attribute: License(NA); RightsStatement(NA); File(isRestricted); Documentation(NA); PreservationPhoto(NA); Form(NA); Correspondence(NA)
+Relationship: File-Licence(Association); File-RightsStatement(Association); Documentation-PreservationPhoto(Generalization); Documentation-Form(Generalization); Documentation-Correspondence(Generalization)
+<end>

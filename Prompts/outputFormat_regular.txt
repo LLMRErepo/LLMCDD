@@ -1,0 +1,14 @@
+The output should be placed between <start> and <end> tags.
+The output should follow the following formats that contains four parts:
+1. User story
+2. Class (The classes derived from the user story should be separated by semicolon.)
+3. Attributes (The attributes linked for one class should be placed in the brackets and separated by comma.)
+4. Relationship (The relationship linked for two classes should be placed in the brackets.)
+Following is format for an example output.
+<start>
+User Story: As a xxx ...
+Class: ClassA; ClassB
+Attribute: ClassA(AttributeA, AttributeB); ClassB(NA)
+Relationship: ClassA-ClassB(RelationshipA)
+<end>
+

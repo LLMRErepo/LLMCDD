@@ -1,0 +1,7 @@
+As an archivist, I want to apply a license or rights statement, so that I know what I can do with a file.
+As an archivist, I want to mark individual files as restricted, so that they don't get shared by mistake.
+As a researcher, I want to check whether a document has a citation information, so that I can cite accurately in a publication.
+As a researcher, I want to check whether a document has a name, so that I can refer to it.
+As an administrator, I want to have researchers reset their own passwords, so that I don't have to send passwords in cleartext.
+As an archivist, I want to manage documentation, including preservation photos, forms and correspondence, so that I can find it easily later.
+As an archivist, I want to link electronic versions of researchers' publications to citations, so that I can share them with other researchers.
