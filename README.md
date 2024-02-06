@@ -11,17 +11,17 @@ The user stories for our preliminary study are placed under "/UserStories"
 
 ## Implementation
 In this work, we evaluate the LLM-based task of deriving class diagrams from user stories with three prompting techniques.
-- Zero-shot prompting (us2uml_zero_regular.py)
-- Few-shot prompting (us2uml_few_regular.py)
-- CoT prompting (us2uml_few_cot.py)
+- **Zero-shot prompting** (us2uml_zero_regular.py)
+- **Few-shot prompting** (us2uml_few_regular.py)
+- **CoT prompting** (us2uml_few_cot.py)
 
-To evaluate the effectiveness of different interactive input methods employed with CoT prompting, two input templates are implemented.
-- CoT one-step prompting (us2uml_few_cot.py)
-- CoT multiple-step prompting (us2uml_few_cot_mul.py)
+Two input templates are implemented to evaluate the effectiveness of different interactive input methods employed with CoT prompting.
+- **CoT one-step prompting** (us2uml_few_cot.py)
+- **CoT multiple-step prompting** (us2uml_few_cot_mul.py)
 
-To evaluate the effectiveness of different examples employed with CoT prompting, two example templates are implemented.
-- CoT prompting covering six examples (us2uml_few_cot.py)
-- CoT prompting covering five examples (us2uml_few_cot_5ex.py)
+Two example templates are implemented to evaluate the effectiveness of different examples employed with CoT prompting.
+- **CoT prompting covering six examples** (us2uml_few_cot.py)
+- **CoT prompting covering five examples** (us2uml_few_cot_5ex.py)
 
 ## Configuration
 The prompting is implemented via gpt-turbo-3.5. To run the above scripts, please specify the OPENAI key information under "config.py".
@@ -29,7 +29,8 @@ To run the scripts for different projects, please update the project number (13 
 
 ## Results
 Under "/Results", the gold standard and evaluation results are provided.
-- "/GoldStandards" (the gold standard for projects PP and DH)
-- Tab PP(g13) in evaluation.xlsx  (one sample LLM-based output for Project PP)
-- Tab DH(g14) in Evaluation.xlsx (one sample LLM-based output for Project DH)
-- Evaluation.xlsx (the calculated completeness and validity)
+- **"/GoldStandards"** (the gold standard for projects PP and DH)
+- **Evaluation.xlsx** (the calculated completeness and validity)
+- **Tab PP(g13)** in evaluation.xlsx  (one sample LLM-based output for Project PP)
+- **Tab DH(g14)** in Evaluation.xlsx (one sample LLM-based output for Project DH)
+
