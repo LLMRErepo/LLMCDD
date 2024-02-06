@@ -29,7 +29,7 @@ To run the scripts for different projects, please update the project number (13 
 
 ## Results
 Under "/Results", the gold standard and evaluation results are provided.
-- /GoldStandard (the gold standard for projects PP and DH)
+- "/GoldStandards" (the gold standard for projects PP and DH)
 - Tab PP(g13) in evaluation.xlsx  (one sample LLM-based output for Project PP)
-- Tab DH(g14) in evaluation.xlsx (one sample LLM-based output for Project DH)
-- evaluation.xlsx (the calculated completeness and validity)
+- Tab DH(g14) in Evaluation.xlsx (one sample LLM-based output for Project DH)
+- Evaluation.xlsx (the calculated completeness and validity)
