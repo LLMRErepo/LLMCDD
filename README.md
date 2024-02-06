@@ -23,12 +23,12 @@ To evaluate the effectiveness of different examples employed with CoT prompting,
 - CoT prompting covering six examples (us2uml_few_cot.py)
 - CoT prompting covering five examples (us2uml_few_cot_5ex.py)
 
-  ## Configuration
-  The prompting is implemented via gpt-turbo-3.5. To run the above scripts, please specify the OPENAI key information under "config.py".
-  To run the scripts for different projects, please update the project number (13 or 14) at the end of your script.
+## Configuration
+The prompting is implemented via gpt-turbo-3.5. To run the above scripts, please specify the OPENAI key information under "config.py".
+To run the scripts for different projects, please update the project number (13 or 14) at the end of your script.
 
-  ## Results
- Under "/Results", the gold standard and evaluation results are provided.
- - GoldStandard (the gold standard for projects PP and DH)
- - SampleOutput (the LLM-based output for one iteration and its completed Class Diagrams)
- - evaluation.csv (the calculated completeness and validity)
+## Results
+Under "/Results", the gold standard and evaluation results are provided.
+- GoldStandard (the gold standard for projects PP and DH)
+- SampleOutput (the LLM-based output for one iteration and its completed Class Diagrams)
+- evaluation.csv (the calculated completeness and validity)
