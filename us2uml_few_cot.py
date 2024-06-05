@@ -25,7 +25,7 @@ def askGPT(prompt):
 
 def runByProject(projectNo, scriptNo):
     us = readUS("UserStories_v2/g" + projectNo + ".txt")
-    ins = "Please derivie three components of class diagrams for following user stories.\n"
+    ins = "Please derive three components of class diagrams for following user stories.\n"
     exUS = readUsExamples("Prompts/example_us_v6.txt")
     exUML = readUmlExamples("Prompts/example_uml_few_cot_v6.txt")
     outputFormat = readOutputFormat("Prompts/outputFormat_cot.txt")
